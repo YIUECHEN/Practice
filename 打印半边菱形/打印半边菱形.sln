@@ -1,0 +1,20 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "打印半边菱形", "打印半边菱形\打印半边菱形.vcxproj", "{C31E10B9-FF41-4FF4-B943-F123ABF6B979}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{C31E10B9-FF41-4FF4-B943-F123ABF6B979}.Debug|Win32.ActiveCfg = Debug|Win32
+		{C31E10B9-FF41-4FF4-B943-F123ABF6B979}.Debug|Win32.Build.0 = Debug|Win32
+		{C31E10B9-FF41-4FF4-B943-F123ABF6B979}.Release|Win32.ActiveCfg = Release|Win32
+		{C31E10B9-FF41-4FF4-B943-F123ABF6B979}.Release|Win32.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

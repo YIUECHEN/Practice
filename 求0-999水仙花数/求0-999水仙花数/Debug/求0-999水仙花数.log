@@ -1,0 +1,17 @@
+﻿生成启动时间为 2019/7/26 20:13:13。
+     1>项目“E:\新建文件夹\求0-999水仙花数\求0-999水仙花数\求0-999水仙花数.vcxproj”在节点 2 上(build 个目标)。
+     1>InitializeBuildStatus:
+         正在对“Debug\求0-999水仙花数.unsuccessfulbuild”执行 Touch 任务。
+       ClCompile:
+         D:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /Od /Oy- /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc100.pdb" /Gd /TP /analyze- /errorReport:prompt "求0-999水仙花数.cpp"
+         求0-999水仙花数.cpp
+     1>e:\新建文件夹\求0-999水仙花数\求0-999水仙花数\求0-999水仙花数.cpp(9): error C2668: “pow”: 对重载函数的调用不明确
+                 d:\program files (x86)\microsoft visual studio 10.0\vc\include\math.h(583): 可能是“long double pow(long double,int)”
+                 d:\program files (x86)\microsoft visual studio 10.0\vc\include\math.h(535): 或       “float pow(float,int)”
+                 d:\program files (x86)\microsoft visual studio 10.0\vc\include\math.h(497): 或       “double pow(double,int)”
+                 尝试匹配参数列表“(int, int)”时
+     1>已完成生成项目“E:\新建文件夹\求0-999水仙花数\求0-999水仙花数\求0-999水仙花数.vcxproj”(build 个目标)的操作 - 失败。
+
+生成失败。
+
+已用时间 00:00:00.84
