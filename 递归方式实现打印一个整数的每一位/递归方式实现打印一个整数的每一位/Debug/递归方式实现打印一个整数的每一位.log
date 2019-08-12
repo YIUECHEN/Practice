@@ -1,0 +1,13 @@
+﻿生成启动时间为 2019/8/12 21:05:57。
+     1>项目“E:\新建文件夹\递归方式实现打印一个整数的每一位\递归方式实现打印一个整数的每一位\递归方式实现打印一个整数的每一位.vcxproj”在节点 2 上(build 个目标)。
+     1>InitializeBuildStatus:
+         正在对“Debug\递归方式实现打印一个整数的每一位.unsuccessfulbuild”执行 Touch 任务。
+       ClCompile:
+         D:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /Od /Oy- /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc100.pdb" /Gd /TP /analyze- /errorReport:prompt test.cpp
+         test.cpp
+     1>e:\新建文件夹\递归方式实现打印一个整数的每一位\递归方式实现打印一个整数的每一位\test.cpp(1): fatal error C1021: 无效的预处理器命令“define_CRT_SECURE_NO_WARNINGS”
+     1>已完成生成项目“E:\新建文件夹\递归方式实现打印一个整数的每一位\递归方式实现打印一个整数的每一位\递归方式实现打印一个整数的每一位.vcxproj”(build 个目标)的操作 - 失败。
+
+生成失败。
+
+已用时间 00:00:00.34
