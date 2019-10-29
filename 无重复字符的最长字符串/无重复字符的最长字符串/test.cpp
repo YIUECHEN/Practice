@@ -10,27 +10,26 @@ using namespace std;
 		int mlen = 0;
 		//±éÀústring
 		for (int i = 0; i<s.size(); ++i){
-			int c = s[i];
+			char c = s[i];
 			//¼ì²évector
-			for (int m = str.size() - 1; m >= 0; --m)
-			if (c == str[m]){
-				if (mlen<str.size()){
-
+			for (int m = str.size() - 1; m >= 0; m--){
+			  if (c == str[m]){
+				if (mlen<str.size())
 					mlen = str.size();
-					//str.erase(str.begin(), str.begin() + m + 1);
-					break;
-				}
-
+				str.erase(str.begin(), str.begin() + m + 1);
+				break;
 			}
+
+		}
 			str.push_back(c);
-		}
-		if (mlen<str.size()){
-			mlen = str.size();
-			return mlen;
-		}
 	}
+		if (mlen<str.size())
+			mlen = str.size();
+		return mlen;
+}
+
 	int main(){
-		string s = "abcfeasji";
+		string s = "bbbbbb";
 		int ret = lengthOfLongestSubstring(s);
 		cout << ret << endl;
 		system("pause");
