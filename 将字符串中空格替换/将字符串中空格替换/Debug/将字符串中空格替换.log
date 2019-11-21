@@ -1,21 +1,8 @@
-﻿生成启动时间为 2019/8/13 20:42:46。
-     1>项目“E:\新建文件夹\将字符串中空格替换\将字符串中空格替换\将字符串中空格替换.vcxproj”在节点 2 上(build 个目标)。
-     1>InitializeBuildStatus:
-         正在创建“Debug\将字符串中空格替换.unsuccessfulbuild”，因为已指定“AlwaysCreate”。
-       ClCompile:
-         D:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /Od /Oy- /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc100.pdb" /Gd /TP /analyze- /errorReport:prompt "将字符串中空格替换.cpp"
-         将字符串中空格替换.cpp
-       Link:
-         D:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"E:\新建文件夹\将字符串中空格替换\Debug\将字符串中空格替换.exe" /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /ManifestFile:"Debug\将字符串中空格替换.exe.intermediate.manifest" /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /DEBUG /PDB:"E:\新建文件夹\将字符串中空格替换\Debug\将字符串中空格替换.pdb" /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"E:\新建文件夹\将字符串中空格替换\Debug\将字符串中空格替换.lib" /MACHINE:X86 "Debug\将字符串中空格替换.obj"
-         LINK : 没有找到 E:\新建文件夹\将字符串中空格替换\Debug\将字符串中空格替换.exe 或上一个增量链接没有生成它；正在执行完全链接
-         将字符串中空格替换.vcxproj -> E:\新建文件夹\将字符串中空格替换\Debug\将字符串中空格替换.exe
-       Manifest:
-         C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\bin\mt.exe /nologo /verbose /outputresource:"E:\新建文件夹\将字符串中空格替换\Debug\将字符串中空格替换.exe;#1" /manifest "Debug\将字符串中空格替换.exe.intermediate.manifest"
-       FinalizeBuildStatus:
-         正在删除文件“Debug\将字符串中空格替换.unsuccessfulbuild”。
-         正在对“Debug\将字符串中空格替换.lastbuildstate”执行 Touch 任务。
-     1>已完成生成项目“E:\新建文件夹\将字符串中空格替换\将字符串中空格替换\将字符串中空格替换.vcxproj”(build 个目标)的操作。
+﻿生成启动时间为 2019/11/21 19:20:52。
+     1>项目“E:\gitup\Practice\将字符串中空格替换\将字符串中空格替换\将字符串中空格替换.vcxproj”在节点 2 上(Build 个目标)。
+     1>C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V120\Microsoft.Cpp.Platform.targets(64,5): error MSB8020: The build tools for Visual Studio 2010 (Platform Toolset = 'v100') cannot be found. To build using the v100 build tools, please install Visual Studio 2010 build tools.  Alternatively, you may upgrade to the current Visual Studio tools by selecting the Project menu or right-click the solution, and then selecting "Upgrade Solution...".
+     1>已完成生成项目“E:\gitup\Practice\将字符串中空格替换\将字符串中空格替换\将字符串中空格替换.vcxproj”(Build 个目标)的操作 - 失败。
 
-生成成功。
+生成失败。
 
-已用时间 00:00:02.47
+已用时间 00:00:00.18
