@@ -11,9 +11,8 @@
     </ProjectConfiguration>
   </ItemGroup>
   <PropertyGroup Label="Globals">
-    <ProjectGuid>{181F343D-55D3-4120-888A-D65546ACA6B2}</ProjectGuid>
-    <RootNamespace>反转字符串</RootNamespace>
-    <ProjectName>找字符串中第一个只出现一次的数字</ProjectName>
+    <ProjectGuid>{210DBABB-D26C-47C4-B4C5-F54D60064729}</ProjectGuid>
+    <RootNamespace>找字符串中第一个只出现一次的字符</RootNamespace>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
