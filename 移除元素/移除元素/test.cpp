@@ -4,7 +4,25 @@
 using namespace std;
 
 int removeElement(vector<int>& nums, int val) {
-
+	int begin = 0, end = nums.size() - 1;
+	while (begin < end){
+		if (nums[begin] == val&&nums[end] == val){
+			end--;
+		}
+		else if (nums[begin] == val&&nums[end] != val){
+			nums[begin] = nums[end];
+			begin++;
+			end--;
+		}
+		else if (nums[begin] != val&&nums[end] != val){
+			begin++;
+		}
+		else{
+			begin++;
+			end--;
+		}
+	}
+	return begin;
 }
 
 int main(){ 
