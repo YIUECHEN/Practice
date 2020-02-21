@@ -2,6 +2,8 @@
 #include<iostream>
 #include<vector>
 #include<fstream>
+#include<sstream>
+
 #include<boost/filesystem.hpp>
 #ifdef _WIN32
 //windows头文件
@@ -16,23 +18,47 @@
 typedef unsigned int uint32_t;
 typedef unsigned long long uint64_t;
 
+
+#define P2P_PORT 9000
+#define MAX_IPBUFFER 16
+#define SHARED_PATH "./Shared/"
+#define DOWNLOAD_PATH "./DownLoad/"
+
 //设计文件操作工具类，目的是为了让外部直接使用文件操作接口
 //若后期文件操作有其他修改，则只需要修改文件操作工具即可，而不需要对原文进行改变
 class FileUtil{
 public:
+	/*static int64_t GetFileSize(const std::string &name){
+		return boost::filesystem::file_size(name);
+	}*/
 	static bool Write(const std::string &name, const std::string &body, int64_t offset = 0){
-		std::ofstream ofs(name);
-		if (ofs.is_open() == false){
-			std::cerr << "文件打开失败"<<std::endl;
+		//std::ofstream ofs(name);
+		//if (ofs.is_open() == false){
+		//	std::cerr << "文件打开失败"<<std::endl;
+		//	return false;
+		//}
+		//ofs.seekp(offset, std::ios::beg);//读写位置相对于起始位置开始偏移offset的偏移量
+		//ofs.write(&body[0], body.size());
+		//if (ofs.good() == false){
+		//	std::cerr << "向文件写入数据失败" << std::endl; 
+		//	return false;
+		//}
+		//ofs.close();
+		//return true;
+		FILE *fp = NULL;
+		fopen_s(&fp, name.c_str(), "wb+");
+		if (fp == NULL){
+			std::cout << "打开文件失败\n";
 			return false;
 		}
-		ofs.seekp(offset, std::ios::beg);//读写位置相对于起始位置开始偏移offset的偏移量
-		ofs.write(&body[0], body.size());
-		if (ofs.good() == false){
-			std::cerr << "向文件写入数据失败" << std::endl; 
+		fseek(fp, offset, SEEK_SET);
+		auto ret = fwrite(body.c_str(), 1, body.size(), fp);
+		if (ret != body.size()){
+			std::cout << "向文件写入数据失败\n";
+			fclose(fp);
 			return false;
 		}
-		ofs.close();
+		fclose(fp);
 		return true;
 	}
 	static bool Read(const std::string &name, std::string *body){
@@ -51,7 +77,25 @@ public:
 		}*/
 		return true;
 	}
-
+	static bool ReadRange(const std::string &name, std::string *body, int64_t len, int64_t offset){
+		body->resize(len);
+		FILE *fp = NULL;
+		fopen_s(&fp,name.c_str(),"rb+");
+		if (fp == NULL){
+			std::cout << "打开文件失败！\n";
+			fclose(fp);
+			return false;
+		}
+		fseek(fp, offset, SEEK_SET);
+		auto ret = fread(&(*body)[0],1,len,fp);
+		if (ret != len){
+			std::cout << "从文件读取数据失败！\n";
+			fclose(fp);
+			return false;
+		}
+		fclose(fp);
+		return true; 
+	}
 };
 
 class Adapter{
