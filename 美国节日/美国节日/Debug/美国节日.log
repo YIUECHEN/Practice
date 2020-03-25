@@ -1,14 +1,14 @@
-﻿生成启动时间为 2020/3/2 11:37:16。
-     1>项目“E:\好好学习吧！\刷题\美国节日\美国节日\美国节日.vcxproj”在节点 2 上(Build 个目标)。
+﻿生成启动时间为 2020/3/25 21:35:40。
+     1>项目“E:\gitup\Practice\美国节日\美国节日\美国节日.vcxproj”在节点 2 上(Build 个目标)。
      1>ClCompile:
          D:\Visual Studio 2013\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /sdl /Od /Oy- /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc120.pdb" /Gd /TP /analyze- /errorReport:prompt test.cpp
          test.cpp
-     1>e:\好好学习吧！\刷题\美国节日\美国节日\test.cpp(14): warning C4804: “<=”: 在操作中使用类型“bool”不安全
+     1>e:\gitup\practice\美国节日\美国节日\test.cpp(14): warning C4804: “<=”: 在操作中使用类型“bool”不安全
        Link:
-         D:\Visual Studio 2013\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"E:\好好学习吧！\刷题\美国节日\Debug\美国节日.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"E:\好好学习吧！\刷题\美国节日\Debug\美国节日.pdb" /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"E:\好好学习吧！\刷题\美国节日\Debug\美国节日.lib" /MACHINE:X86 Debug\test.obj
-         美国节日.vcxproj -> E:\好好学习吧！\刷题\美国节日\Debug\美国节日.exe
-     1>已完成生成项目“E:\好好学习吧！\刷题\美国节日\美国节日\美国节日.vcxproj”(Build 个目标)的操作。
+         D:\Visual Studio 2013\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"E:\gitup\Practice\美国节日\Debug\美国节日.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"E:\gitup\Practice\美国节日\Debug\美国节日.pdb" /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"E:\gitup\Practice\美国节日\Debug\美国节日.lib" /MACHINE:X86 Debug\test.obj
+         美国节日.vcxproj -> E:\gitup\Practice\美国节日\Debug\美国节日.exe
+     1>已完成生成项目“E:\gitup\Practice\美国节日\美国节日\美国节日.vcxproj”(Build 个目标)的操作。
 
 生成成功。
 
-已用时间 00:00:06.29
+已用时间 00:00:09.86
